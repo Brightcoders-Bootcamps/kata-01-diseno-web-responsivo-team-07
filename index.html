@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./scripts/index.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -15,65 +17,95 @@
   </style>
 </head>
 <body>
+  <header class="container">
+    <div class="menuLogo">
+        <img src="images/logo.svg">
+        <button onclick="showMenu()" class="transparentButton"><img src="./images/open-menu.svg" alt="" height="20px"></button>
+    </div>
+    
+    <div id="menumorado" class="menuMorado"> <!-- Div morado -->
+        <div>
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Resources</li>    
+            </ul>
+        </div>
+        <div style="border-top: .1px solid white; width:90%;margin-left: 5%;"></div>
+        <div>
+            <ul>
+                <li>Login</li>
+                <li><button id="signButton" class="customButton">Sign Up</button></li>
+            </ul>
+        </div>
+    </div>  
 
-  Features
-  Pricing
-  Resources
+        
+  </header>
+  
+  <section>
+    More than just shorter links
 
-  Login
-  Sign Up
+    Build your brand’s recognition and get detailed insights 
+    on how your links are performing.
 
-  More than just shorter links
+    Get Started
+  </section>
 
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
+  <section>
+    Shorten It!
+  </section> 
+  <section>
+    Advanced Statistics
 
-  Get Started
+    Track how your links are performing across the web with our 
+    advanced statistics dashboard.
 
-  Shorten It!
+    Brand Recognition
 
-  Advanced Statistics
+    Boost your brand recognition with each click. Generic links don’t 
+    mean a thing. Branded links help instil confidence in your content.
 
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
+    Detailed Records
 
-  Brand Recognition
+    Gain insights into who is clicking your links. Knowing when and where 
+    people engage with your content helps inform better decisions.
 
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
+    Fully Customizable
 
-  Detailed Records
+    Improve brand awareness and content discoverability through customizable 
+    links, supercharging audience engagement.
+  </section>
 
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
+  <section>
+    Boost your links today
 
-  Fully Customizable
+    Get Started
+  </section>
 
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
+  <section>
 
-  Boost your links today
+    <img> 
 
-  Get Started
+    Features
 
-  Features
+    Link Shortening
+    Branded Links
+    Analytics
 
-  Link Shortening
-  Branded Links
-  Analytics
+    Resources
 
-  Resources
+    Blog
+    Developers
+    Support
 
-  Blog
-  Developers
-  Support
+    Company
 
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
+    About
+    Our Team
+    Careers
+    Contact
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
