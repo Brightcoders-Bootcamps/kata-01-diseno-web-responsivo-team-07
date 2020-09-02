@@ -1,22 +1,28 @@
 
 /* font-family: 'Poppins', sans-serif; */
+:root{
+    --light-gray: hsl(0, 0%, 75%);
+    --blue-btn: hsl(180, 66%, 49%);
+    --purple-bg: hsl(257, 27%, 26%);
+    --purple-title:hsl(260, 8%, 14%);
+}
+
 body{
     font-family: 'Poppins';
     font-weight: 700;
 }
-
-.menuLogo{
+.menu-logo{
     display: flex;
     justify-content: space-between;
 }
-.transparentButton{
+.transparent-button{
     background-color: transparent;
     border: 0px;
 }
-.menuMorado{
+.menu-morado{
     margin-top: 10px;
     height:0px;
-    background-color:#3A3053; 
+    background-color:var(--purple-bg); 
     color:#ffffff;
     border-radius: 10px;
     justify-content: space-between;
@@ -29,9 +35,9 @@ ul{
 li{
     margin:20px;
 }
-.customButton{
+.custom-button{
     color: white !important;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--blue-btn);
     border: none;
     border-radius: 25px;
     width: 90%;
@@ -42,3 +48,80 @@ li{
     font-size: 16px;
     display: none;
 }
+
+.working-img{
+    width: auto;
+    height: 355px;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: var(--purple-title);
+    line-height: 60px;
+}
+
+.msg{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    color: var(--light-gray);
+}
+
+.gs-btn{
+    color: white !important;
+    background-color: var(--blue-btn);
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+    height: 50px;
+    padding: 0px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+}
+.div-center{
+    display: flex;
+    justify-content: center;
+}
+.gs-btn-div{
+    align-content: center;
+    padding:5%;
+}
+.shrtn-link-sec{
+    background-image: url(../images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #3A3053;
+    width: 90%;
+    border-radius: 10px;
+}
+.bicolor-background{
+    /* background-size: 50%; 
+    background-color: #F0F1F6; */
+}
+.input-shrtn-link{
+    height: 50px;
+    width:90%;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: var(--light-gray);
+    border:none;
+    font-size: 16px;
+}
+
+.btn-short-it{
+    background-color: #2acfcf;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;     
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+}
+
