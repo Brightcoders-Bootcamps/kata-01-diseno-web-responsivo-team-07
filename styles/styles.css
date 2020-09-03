@@ -24,7 +24,7 @@ body{
     height:auto;
     display: none;
     background-color:var(--purple-bg); 
-    color:green;
+    color:white;
     border-radius: 10px;
     justify-content: space-between;
 }
