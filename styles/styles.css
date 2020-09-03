@@ -4,7 +4,7 @@
     --light-gray: hsl(0, 0%, 75%);
     --blue-btn: hsl(180, 66%, 49%);
     --purple-bg: hsl(257, 27%, 26%);
-    --purple-title:hsl(260, 8%, 14%);
+    --purple-title:hsl(260, 8%, 14%);    
 }
 
 body{
@@ -21,7 +21,7 @@ body{
 }
 .menu-morado{
     margin-top: 10px;
-    height:0px;
+    height:auto;
     background-color:var(--purple-bg); 
     color:green;
     border-radius: 10px;
@@ -86,6 +86,7 @@ h2{
 .div-center{
     display: flex;
     justify-content: center;
+    width: auto;
 }
 .gs-btn-div{
     align-content: center;
@@ -102,6 +103,10 @@ h2{
 .bicolor-background{
     /* background-size: 50%; 
     background-color: #F0F1F6; */
+    width:100vw;
+    margin-left: -8px;
+    height: 100%; 
+    background: linear-gradient(to top, #F0F1F6 50%, white 50%); 
 }
 .input-shrtn-link{
     height: 50px;
@@ -125,3 +130,18 @@ h2{
     height: 50px;
 }
 
+.section-advanced{
+    background-color: #F0F1F6;
+    width: 100vw;
+    margin-left: -8px;
+    margin-top: -25px;
+    padding-top: 110px;
+    padding-bottom: 25px;
+}
+
+.title-advanced{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+}
