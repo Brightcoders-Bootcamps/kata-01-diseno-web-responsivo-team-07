@@ -93,7 +93,7 @@ h2{
     align-content: center;
     padding:5%;
 }
-.shrtn-link-sec{n
+.shrtn-link-sec{
     background-image: url(../images/bg-shorten-mobile.svg);
     background-repeat: no-repeat;
     background-position-x: right;
@@ -197,4 +197,13 @@ h2{
     font-size: 20px;
     text-align: center;
     color: var(--light-gray);
+}
+
+.card-margin-top{
+    margin-top: 50px;
+}
+.rayita-cyan{
+    width: 0px;
+    height: 51px;
+    border: solid hsl(180, 66%, 49%) 5px;
 }
