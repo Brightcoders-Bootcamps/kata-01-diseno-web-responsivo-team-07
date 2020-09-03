@@ -23,7 +23,7 @@ body{
     margin-top: 10px;
     height:0px;
     background-color:var(--purple-bg); 
-    color:#ffffff;
+    color:green;
     border-radius: 10px;
     justify-content: space-between;
 }
