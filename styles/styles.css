@@ -22,6 +22,7 @@ body{
 .menu-morado{
     margin-top: 10px;
     height:auto;
+    display: none;
     background-color:var(--purple-bg); 
     color:green;
     border-radius: 10px;
@@ -92,7 +93,7 @@ h2{
     align-content: center;
     padding:5%;
 }
-.shrtn-link-sec{
+.shrtn-link-sec{n
     background-image: url(../images/bg-shorten-mobile.svg);
     background-repeat: no-repeat;
     background-position-x: right;
@@ -130,13 +131,15 @@ h2{
     height: 50px;
 }
 
+
+
 .section-advanced{
     background-color: #F0F1F6;
     width: 100vw;
     margin-left: -8px;
     margin-top: -25px;
     padding-top: 110px;
-    padding-bottom: 25px;
+    padding-bottom: 75px;
 }
 
 .title-advanced{
@@ -144,4 +147,54 @@ h2{
     font-weight: 700;
     font-size: 28px;
     text-align: center;
+}
+
+.bg-div-img{
+    border-radius: 50%;
+    background-color: var(--purple-bg);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.img-brnd{
+    width: 50%;
+    height: 50%;
+}
+
+.sec-div-icons{
+    background-color: #F0F1F6;
+    width: 100vw;
+    margin-left: -8px;
+
+}
+
+.brnd-sction{
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    margin-left: 5%;
+    padding-bottom: 30px;
+}
+
+.reco{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.boost{
+    margin-top: -10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--light-gray);
 }
