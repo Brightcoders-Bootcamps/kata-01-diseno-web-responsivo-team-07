@@ -80,12 +80,17 @@ h2{
     line-height: 60px;
 }
 
+.itm-1-1{
+    padding: 10px;
+}
+
 .msg{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 19px;
     text-align: center;
     color: var(--light-gray);
+    
 }
 
 .gs-btn{
@@ -194,6 +199,11 @@ h2{
     margin-left: 5%;
     padding-bottom: 30px;
 }
+
+.brnd-sction h2{
+    color: var(--purple-title);
+}
+
 
 .reco{
     font-family: 'Poppins';
