@@ -170,7 +170,8 @@ h2{
     background-color: #F0F1F6;
     width: 100vw;
     margin-left: -8px;
-    padding-bottom: 100px;
+    padding
+      -bottom: 100px;
 }
 
 .brnd-sction{
@@ -232,4 +233,41 @@ h2{
 }
 .wider-button{
     width: 200px;
+}
+
+.footer-sec{
+    background-color: #232027;
+    width: 100vw;
+    margin-left: -8px;
+}
+
+.title-footer{
+    font-size: 35px;
+}
+
+.footer-subtitles{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 19px;
+}
+.footer-subtitles-gray{
+    color:#BAB8BD;
+    text-align: center;
+    font-size: 17px;
+}
+
+h5 {
+    margin: 7px;
+    font-weight: 400;
+}
+
+.div-icons{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+}
+.icons{
+    padding-right: 20px;
+}
 }
