@@ -170,7 +170,7 @@ h2{
     background-color: #F0F1F6;
     width: 100vw;
     margin-left: -8px;
-
+    padding-bottom: 100px;
 }
 
 .brnd-sction{
@@ -206,4 +206,30 @@ h2{
     width: 0px;
     height: 51px;
     border: solid hsl(180, 66%, 49%) 5px;
+}
+
+.boost-sec{
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-color: #3A3053;
+    width: 100vw;
+    margin-left:-8px;
+}
+.upper-margin{
+    margin-top: -4px;
+}
+h2{
+    color:white;
+}
+.col-direction{
+    flex-direction: column;
+    align-items: center;
+}
+.boost-div{
+    height: 380px;
+}
+.wider-button{
+    width: 200px;
 }
