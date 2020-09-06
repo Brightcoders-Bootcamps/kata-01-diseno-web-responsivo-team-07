@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css" media="only screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./styles/desktop-styles.css" media="only screen and (min-width: 769px)">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="./scripts/index.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -31,8 +32,8 @@
                 <li>Resources</li>    
             </ul>
         </div>
-        <div style="border-top: .1px solid white; width:90%;margin-left: 5%;"></div>
-        <div>
+        <div class="rayita-menu-morado"></div>
+        <div class="div-login">
             <ul>
                 <li>Login</li>
                 <li><button  id="signButton" class="custom-button">Sign Up</button></li>
@@ -82,7 +83,7 @@
     <div class="">
         <h1 class="title-advanced">Advanced Statistics</h1>
     </div>
-    <div>
+    <div class="adv-statistic">
       <p class="msg">
         Track how your links are performing across the web with our 
         advanced statistics dashboard.
@@ -92,71 +93,78 @@
 
 
   <section class="sec-div-icons">
-    <div class="brnd-sction">
-      <div class="img-class div-center">
-        <div class="bg-div-img">
-          <img class="img-brnd" src="images/icon-brand-recognition.svg">
+    <div class="features-section">
+      <div class="brnd-sction">
+        <div class="img-class div-center">
+          <div class="bg-div-img">
+            <img class="img-brnd" src="images/icon-brand-recognition.svg">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="reco"> 
+            Brand Recognition
+          </h2>
+          <p class="boost">
+            Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
         </div>
       </div>
-      <h2 class="reco"> 
-        Brand Recognition
-      </h2>
-      <p class="boost">
-        Boost your brand recognition with each click. Generic links don’t 
-        mean a thing. Branded links help instil confidence in your content.
-      </p>
-    </div>
-    <!-- contenedor de la rayita -->
-    <div class="div-center">
-      <!-- la rayita -->
-      <div class="rayita-cyan">
+      <!-- contenedor de la rayita -->
+      <div class="div-center">
+        <!-- la rayita -->
+        <div class="rayita-cyan">
+        </div>
       </div>
-    </div>
+      <div class="brnd-sction card-margin-top">
+        <div class="img-class div-center">
+          <div class="bg-div-img">
+            <img class="img-brnd" src="images/icon-detailed-records.svg">
+          </div>
+        </div>
+        <div class="card-content">
 
-    <div class="brnd-sction card-margin-top">
-      <div class="img-class div-center">
-        <div class="bg-div-img">
-          <img class="img-brnd" src="images/icon-detailed-records.svg">
+          <h2 class="reco"> 
+            Detailed Records
+          </h2>
+          <p class="boost">
+            Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.
+          </p>
         </div>
       </div>
-      <h2 class="reco"> 
-        Detailed Records
-      </h2>
-      <p class="boost">
-        Gain insights into who is clicking your links. Knowing when and where 
-        people engage with your content helps inform better decisions.
-      </p>
-    </div>
-    <!-- contenedor de la rayita -->
-    <div class="div-center">
-      <!-- la rayita -->
-      <div class="rayita-cyan">
-      </div>
-    </div>
-    <div class="brnd-sction card-margin-top">
-      <div class="img-class div-center">
-        <div class="bg-div-img">
-          <img class="img-brnd" src="images/icon-fully-customizable.svg">
+      <!-- contenedor de la rayita -->
+      <div class="div-center">
+        <!-- la rayita -->
+        <div class="rayita-cyan">
         </div>
       </div>
-      <h2 class="reco"> 
-        Fully Customizable
-      </h2>
-      <p class="boost">
-        Improve brand awareness and content discoverability through customizable 
-        links, supercharging audience engagement.
-      </p>
-    </div>
-    
-   <section class="boost-sec">
+      <div class="brnd-sction card-margin-top customizable-card">
+        <div class="img-class div-center">
+          <div class="bg-div-img">
+            <img class="img-brnd" src="images/icon-fully-customizable.svg">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="reco"> 
+            Fully Customizable
+          </h2>
+          <p class="boost">
+            Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.
+          </p>
+        </div>
 
-    <div class="div-center col-direction boost-div">
-      <h2 class="title-advanced upper-margin">Boost your links today</h2>
-   
-      <button class="gs-btn upper-margin wider-button" >Get Started</button>
+        
+      </div>
     </div>
+    <section class="boost-sec">
+      <div class="div-center col-direction boost-div">
+        <h2 class="title-advanced upper-margin">Boost your links today</h2>
     
-  </section>
+        <button class="gs-btn upper-margin wider-button" >Get Started</button>
+      </div>
+    </section>
 
   <footer class="div-center footer-sec">
     <div>

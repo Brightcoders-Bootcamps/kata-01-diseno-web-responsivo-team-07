@@ -15,7 +15,8 @@ body{
 }
 
 header{
-    padding: 20px 15px 15px 15px;
+    padding: 40px 85px;
+    display: flex;
 }
 
 .img-section-1{
@@ -28,46 +29,54 @@ header{
 }
 
 .menu-logo{
-    display: flex;
     justify-content: space-between;
+    width: 15%;
 }
 .transparent-button{
     background-color: transparent;
     border: 0px;
+    display: none;
 }
 .menu-morado{
-    margin-top: 10px;
+    width: 85%;
     height:auto;
-    display: none;
-    background-color:var(--purple-bg); 
-    color:white;
+    display: flex;
+    color: var(--light-gray);
     border-radius: 10px;
     justify-content: space-between;
 }
 .rayita-menu-morado{
     display:none;
-    border-top: .1px solid white; width:90%;margin-left: 5%;
+}
+#signButton{
+    display: inline;
 }
 ul{
     list-style:none;
-    padding: 0px;
     text-align: center;
+    display: flex;
+    margin: 0px;
 }
 li{
-    margin:20px;
+    /* margin:20px; */
+    margin: 8px;
 }
 .custom-button{
     color: white !important;
     background-color: var(--blue-btn);
     border: none;
+    margin-top: -12px;
     border-radius: 25px;
-    width: 90%;
+    width: 200%;
     height: 50px;
     padding: 0px;
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 16px;
     display: none;
+}
+.div-login{
+    padding-right: 80px;
 }
 
 .working-img{
@@ -112,6 +121,7 @@ h2{
 .div-center{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: auto;
 }
 .gs-btn-div{
@@ -183,7 +193,22 @@ h2{
     align-items: center;    
 }
 
-
+.adv-statistic{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    
+}
+.adv-statistic p{
+    width: 40%;
+    max-width: 600px;
+    margin: 0px;
+}
+.features-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .img-brnd{
     width: 50%;
     height: 50%;
@@ -195,15 +220,16 @@ h2{
 }
 
 .brnd-sction{
-    width: 90%;
-    height: 300px;
+    width: 30%;
+    height: fit-content;
     border-radius: 10px;
     align-items: center;
     background-color: white;
-    margin-left: 5%;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
-
+.card-content{
+    padding:30px;
+}
 .brnd-sction h2{
     color: var(--purple-title);
 }
@@ -231,9 +257,12 @@ h2{
     margin-top: 50px;
 }
 .rayita-cyan{
-    width: 0px;
-    height: 51px;
+    width: 51px;
+    height: 0px;
     border: solid hsl(180, 66%, 49%) 5px;
+}
+.customizable-card{
+    margin-top: 100px;
 }
 
 .boost-sec{
