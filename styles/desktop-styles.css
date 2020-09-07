@@ -58,8 +58,19 @@ ul{
     margin: 0px;
 }
 li{
-    /* margin:20px; */
     margin: 8px;
+}
+li:hover{
+    color:black;
+}
+button:hover{
+    /* background-color: hsla(180, 66%, 49%, 0.5); */
+    background-color: #9BE2E2;
+}
+
+.hover-cyan:hover{
+    color:var(--blue-btn);
+    fill:var(--blue-btn);
 }
 .custom-button{
     color: white !important;
@@ -119,10 +130,12 @@ h2{
     font-size: 18px;
 }
 .div-center{
-    display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
+}
+.div-block{
+    display:block;
 }
 .gs-btn-div{
     align-content: center;
@@ -145,7 +158,7 @@ h2{
 }
 .input-shrtn-link{
     height: 50px;
-    width:90%;
+    width: 90%;
     border-radius: 10px;
     font-family: 'Poppins';
     color: var(--light-gray);
@@ -220,7 +233,7 @@ h2{
 }
 
 .brnd-sction{
-    width: 30%;
+    width: 25%;
     height: fit-content;
     border-radius: 10px;
     align-items: center;
@@ -383,11 +396,130 @@ h5 {
     padding-right: 103px;
     width: auto;
 }
-.input-shrtn-link {
-    width: 763px;
-}
 
 .btn-short-it{
-    width: 184px;
     margin-left: -30px;
+}
+
+
+/*Footer media queries*/
+
+.boost-sec-web{
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-color: #3A3053;
+    width: 100vw;
+    height: 250px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boost-seec-web-align{
+    justify-content: start !important; 
+    padding-top: 60px;
+}
+
+.boost-seec-web-align h2{
+    font-size: 42px;
+    font-weight: 700;
+
+}
+
+.boost-seec-web-align button{
+   width: 45%;
+   height: 60px;
+   border-radius: 30px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.col-direction{
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-center{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.title-advanced{
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-align: center;
+}
+
+.upper-margin{
+    margin-top: -4px;
+}
+
+.gs-btn{
+    color: white !important;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+    height: 50px;
+    padding: 0px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.wider-button{
+    width: 200px;
+}
+
+.ft-cntnr{    /*Preguntar si todos los textos e iconos son clicables para ponerlos dentro de un href*/
+    padding-right: 100px;
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    background-color: #232027;
+    color: white;
+    font-family: 'Poppins';
+    height: 300px; /*Preguntar si abajo estará el nombre del equipo  -  de hecho hace falta esa parte para que la pongas*/
+    width: 100vw;
+}
+
+.logo-txt{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 103px;
+    margin-top: -30px;
+}
+
+.title-h5{
+    margin-bottom: 30px;
+}
+
+.text-h5{
+    line-height: 25px;
+    color: #A9A7AC;
+}
+
+.ft-icons{
+    display: flex;
+    margin: 0px;
+    padding: 0;
+    border: 0px;
+}
+
+.icon-itm{
+    padding: 10px;
+}
+
+
+.width-input-short{
+    width: 80%;
+}
+
+.width-btn-short{
+    width: 20%;
 }
