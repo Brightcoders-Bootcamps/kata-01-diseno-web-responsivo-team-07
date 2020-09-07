@@ -62,15 +62,18 @@ li{
 }
 li:hover{
     color:black;
+    cursor: pointer;
 }
 button:hover{
     /* background-color: hsla(180, 66%, 49%, 0.5); */
     background-color: #9BE2E2;
+    cursor: pointer;
 }
 
 .hover-cyan:hover{
     color:var(--blue-btn);
     fill:var(--blue-btn);
+    cursor: pointer;
 }
 .custom-button{
     color: white !important;
@@ -129,13 +132,16 @@ h2{
     font-weight: 700;
     font-size: 18px;
 }
+.gs-btn-block{
+    display: block !important;
+}
 .div-center{
     justify-content: center;
     align-items: center;
     width: auto;
 }
-.div-block{
-    display:block;
+.div-get-started{
+    justify-content: left;
 }
 .gs-btn-div{
     align-content: center;
