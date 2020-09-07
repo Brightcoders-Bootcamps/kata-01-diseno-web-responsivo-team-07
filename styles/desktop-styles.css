@@ -326,3 +326,68 @@ h5 {
 .icons{
     padding-right: 20px;
 }
+
+/* Estilos daniel (section "get Started") */
+.section-get-started{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.itm-1-1 {
+    padding-left: 177px; 
+}
+.itm-1 {
+    text-align: left;
+    color: black;
+    font-size: 65px;
+    margin-bottom: 0px;    
+    line-height: 80px;
+}
+.msg{
+    text-align: left;
+    margin-top: 0px;
+}
+.gs-btn{
+    color: white !important;
+    background-color: var(--blue-btn);
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    width: 40%;
+    margin-left: -25px;
+}
+.working-img {
+    width: 760px;
+    /*width: auto;*/
+    height: 442px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+}
+.gs-btn-div {
+    padding-right: 0px;
+    padding-bottom: 61px;
+    display: block;
+}
+
+/*section shorten it! */
+.shrtn-link-sec {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    display: flex;
+}
+.bicolor-background{
+    padding-left: 103px;
+    padding-right: 103px;
+    width: auto;
+}
+.input-shrtn-link {
+    width: 763px;
+}
+
+.btn-short-it{
+    width: 184px;
+    margin-left: -30px;
+}
