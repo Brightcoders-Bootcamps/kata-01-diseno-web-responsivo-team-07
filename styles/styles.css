@@ -45,7 +45,6 @@ header{
     justify-content: space-between;
 }
 .rayita-menu-morado{
-    display:none;
     border-top: .1px solid white; width:90%;margin-left: 5%;
 }
 ul{
