@@ -350,6 +350,7 @@ h5 {
     padding-right: 20px;
 }
 
+
 /* Estilos daniel (section "get Started") */
 .section-get-started{
     display: flex;
@@ -415,6 +416,10 @@ h5 {
 
     padding-left: 110px;
     padding-right: 110px;
+}
+.gray-bg div{
+    display:flex;
+    flex-direction:column;
 }
 .cards-shortened{
     background-color: white;

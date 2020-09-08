@@ -66,14 +66,14 @@
     <div class="div-center bicolor-background">
       <div class="shrtn-link-sec">
         <div class="gs-btn-div div-center width-input-short">
-          <input class="input-shrtn-link" type="text" placeholder="   Shorten a link here...">
+          <input id="input-short" class="input-shrtn-link" type="text" placeholder="   Shorten a link here...">
         </div>
         <div class="gs-btn-div div-center width-btn-short">
-          <button class="btn-short-it">Shorten It!</button>
+          <button class="btn-short-it" onclick="addElemento(getElementById('input-short').value)">Shorten It!</button>
         </div>
       </div>
     </div>
-    <div id="shortenedlinksdiv" class="gray-bg div-center">
+    <div id="prueba" class="gray-bg div-center">
       <div class="cards-shortened">
         <div class="div-center">
           <span>www.frontendmentor.com/dalskdjals</span>
@@ -87,8 +87,7 @@
             <button onclick="btncopy()" class="btn-short-it btn-copy">Copy</button>
           </div>
         </div>
-      </div>
-    
+      </div>    
     </div>
       
       
@@ -250,4 +249,7 @@
     Coded by <a href="#">Team-07</a>.
   </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./scripts/api.js"></script>
 </html>

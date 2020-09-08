@@ -21,7 +21,7 @@ function btncopy(){
 }
 let shordiv;
 function filllinks(){
-    //shortdiv=document.getElementById(shortenedlinksdiv);
+    // shortdiv=document.getElementById(shortenedlinksdiv);
     // shordiv.innerHTML+="<div class='cards-shortened'>"+
     //     "<div class='div-center'>"
     //       "<span>"+inputvar+"</span>"+
