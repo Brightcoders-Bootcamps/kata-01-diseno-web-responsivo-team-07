@@ -19,3 +19,22 @@ function btncopy(){
 
     //this.style.backgroundColor = "white";
 }
+let shordiv;
+function filllinks(){
+    //shortdiv=document.getElementById(shortenedlinksdiv);
+    // shordiv.innerHTML+="<div class='cards-shortened'>"+
+    //     "<div class='div-center'>"
+    //       "<span>"+inputvar+"</span>"+
+    //     "</div>"+
+    //     <div class="rayita-shorten"></div>
+    //     <div class="grid-cont">
+    //       <div class="div-center">
+    //         <span class="cyan-color">https://shoretn/url</span>
+    //       </div>
+    //       <div class="div-center">+
+    //         "<button  onclick="+btncopy(+id+1)" class="btn-short-it btn-copy">Copy</button>"
+    //       </div>
+    //     </div>
+    //   </div>
+
+}
