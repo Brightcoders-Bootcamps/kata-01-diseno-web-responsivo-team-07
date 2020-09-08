@@ -13,3 +13,9 @@ function showMenu(){
     }
     isMenuOpen=!isMenuOpen;
 }
+
+
+function btncopy(){
+
+    //this.style.backgroundColor = "white";
+}

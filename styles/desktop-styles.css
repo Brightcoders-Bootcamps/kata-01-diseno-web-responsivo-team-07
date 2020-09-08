@@ -406,6 +406,41 @@ h5 {
     padding-right: 103px;
     width: auto;
 }
+.cyan-color{
+    color: var(--blue-btn) !important;
+}
+.gray-bg{
+    background-color:#F0F1F6;
+    padding: 15px 10px;
+
+    padding-left: 110px;
+    padding-right: 110px;
+}
+.cards-shortened{
+    background-color: white;
+    width: 89%;
+    height: auto; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px;
+}
+.grid-cont{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.cards-shortened span{
+    font-weight: 400;
+    color: var(--purple-title);
+}
+.cards-shortened div{
+    margin: 3px;
+}
+.cards-shortened button{
+    width: 100px;
+    margin: 0px;
+}
 
 .btn-short-it{
     margin-left: -30px;
