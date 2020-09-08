@@ -5,7 +5,6 @@ function addElemento(text){
     divInput = document.getElementById("div-input");
     inptVar = document.getElementById("input-short");
     if(text==""){
-        divInput.style.marginTop= "-15px";
         inptVar.classList.add('inputWarning');
         if (sptxt=="0"){
             sptxt = document.createElement("SPAN");
@@ -26,7 +25,7 @@ function addElemento(text){
             "url": text,
         })
         .then(function (response) {
-            let shortdiv = document.getElementById('prueba');
+            let shortdiv = document.getElementById('linksContainer');
             console.log(shortdiv);
             let divchild = document.createElement("div")
             let hashid = response.data.hashid;

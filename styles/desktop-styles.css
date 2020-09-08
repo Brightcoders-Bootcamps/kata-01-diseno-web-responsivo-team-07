@@ -586,7 +586,9 @@ h5 {
     font-weight: 400;
     font-style: italic;
 }
-
+#div-input{
+    width: 122px;
+}
 .inputWarning{
     border: 2px solid #E7666B !important;
 }
@@ -599,4 +601,9 @@ h5 {
 }
 .inputOk::placeholder {
     color:var(--light-gray);
+}
+
+.input-short-desktop{
+    flex-direction: column;
+    align-items: start;
 }
