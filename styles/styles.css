@@ -7,6 +7,11 @@
     --purple-title:hsl(260, 8%, 14%);    
 }
 
+.btn-copy{
+    width: 100% !important;
+    height: 40px !important;
+}
+
 body{
     font-family: 'Poppins';
     font-weight: 700;
@@ -98,6 +103,11 @@ h2{
 .cyan-color{
     color: var(--blue-btn) !important;
 }
+
+.srtn-link-cyan{
+    justify-content: start !important;
+}
+
 .gs-btn{
     color: white !important;
     background-color: var(--blue-btn);
@@ -135,6 +145,8 @@ h2{
     background: linear-gradient(to top, #F0F1F6 50%, white 50%); 
 }
 .gray-bg{
+    display: flex;
+    flex-direction: column;
     background-color:#F0F1F6;
     padding: 15px 10px;
 }
@@ -147,10 +159,14 @@ h2{
     justify-content: space-around;
     flex-direction: column;
     padding: 15px;
+    margin-bottom: 10px;
 }
 .cards-shortened span{
     font-weight: 400;
     color: var(--purple-title);
+    white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
 }
 .cards-shortened div{
     margin: 3px;
@@ -185,8 +201,19 @@ h2{
     width: 90%;
     height: 50px;
 }
-
-
+.inputWarning{
+    border: 2px solid #E7666B !important;
+}
+.inputWarning::placeholder{
+    color:  #E7666B !important;
+    opacity: 50%;
+}
+.inputOk{
+    border: none;
+}
+.inputOk::placeholder {
+    color:var(--light-gray);
+}
 
 .section-advanced{
     background-color: #F0F1F6;
@@ -329,3 +356,14 @@ h5 {
     padding-right: 20px;
 }
 
+.span-short{
+    color:#E7666B;
+    font-size: 13px;
+    padding-left: 9%;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#div-input{
+    margin-top: -15px;
+}

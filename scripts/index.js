@@ -3,7 +3,7 @@ function showMenu(){
     let menumorado= document.getElementById('menumorado');
     let sButton = document.getElementById('signButton');
     if(!isMenuOpen){
-        menumorado.style.display = "block";
+        menumxorado.style.display = "block";
         menumorado.style.padding= "15px";
         sButton.style.display= "inline-block";
     }else{
@@ -19,6 +19,9 @@ function btncopy(){
 
     //this.style.backgroundColor = "white";
 }
+
+
+
 let shordiv;
 function filllinks(){
     // shortdiv=document.getElementById(shortenedlinksdiv);

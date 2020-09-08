@@ -163,6 +163,8 @@ h2{
     background: linear-gradient(to top, #F0F1F6 50%, white 50%); 
 }
 .gray-bg{
+    display: flex;
+    flex-direction: column;
     background-color:#F0F1F6;
     padding: 15px 10px;
 }
@@ -410,6 +412,8 @@ h5 {
 .cyan-color{
     color: var(--blue-btn) !important;
 }
+
+
 .gray-bg{
     background-color:#F0F1F6;
     padding: 15px 10px;
@@ -417,10 +421,7 @@ h5 {
     padding-left: 110px;
     padding-right: 110px;
 }
-.gray-bg div{
-    display:flex;
-    flex-direction:column;
-}
+
 .cards-shortened{
     background-color: white;
     width: 89%;
@@ -430,6 +431,7 @@ h5 {
     justify-content: space-between;
     flex-direction: row;
     padding: 15px;
+    margin-bottom: 20px;
 }
 .grid-cont{
     display: grid;
@@ -438,6 +440,9 @@ h5 {
 .cards-shortened span{
     font-weight: 400;
     color: var(--purple-title);
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .cards-shortened div{
     margin: 3px;
@@ -572,4 +577,26 @@ h5 {
 
 .width-btn-short{
     width: 20%;
+}
+/* clases del input y warning */
+.span-short{
+    color:#E7666B;
+    font-size: 13px;
+    padding-left: 9%;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.inputWarning{
+    border: 2px solid #E7666B !important;
+}
+.inputWarning::placeholder{
+    color:  #E7666B !important;
+    opacity: 50%;
+}
+.inputOk{
+    border: none;
+}
+.inputOk::placeholder {
+    color:var(--light-gray);
 }
