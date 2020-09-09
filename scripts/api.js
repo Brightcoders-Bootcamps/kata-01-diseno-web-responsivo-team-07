@@ -1,7 +1,9 @@
 var sptxt ="0";
 let divInput;
 var inptVar;
+var idinput=0;
 function addElemento(text){
+    let me = this;
     divInput = document.getElementById("div-input");
     inptVar = document.getElementById("input-short");
     if(text==""){
@@ -29,23 +31,26 @@ function addElemento(text){
             console.log(shortdiv);
             let divchild = document.createElement("div")
             let hashid = response.data.hashid;
+            let contSpan = document.getElementById("input-short")
             console.log(hashid);
-            shortdiv.innerHTML+="<div class='cards-shortened'>"+
-                "<div class='div-center'>"+
-                "<span>"+text+"</span>"+
-                "</div>"+
-                "<div class='rayita-shorten'></div>"+
-                "<div class='grid-cont'>"+
-                "<div class='div-center'>"+
-                    "<span class='cyan-color'>https://rel.ink/"+hashid+"</span>"+
-                "</div>"+
-                "<div class='div-center'>"+
-                    "<button  onclick='+btncopy(+id+1)' class='btn-short-it btn-copy'>Copy</button>"+
-                "</div>"+
-                "</div>"+
-            "</div>";
+            me.idinput++;
+            shortdiv.innerHTML+=`<div class='cards-shortened'>
+                <div class='div-center'>
+                <span>${response.data.url}</span>
+                </div>
+                <div class='rayita-shorten'></div>
+                <div class='grid-cont'>
+                <div class='div-center'>
+                    <span id="str_${idinput}" class='cyan-color'>https://rel.ink/${hashid}</span>
+                </div>
+                <div class='div-center'>
+                    <button id="btn_${idinput}" onclick="copiarAlPortapapeles('str_${idinput}','btn_${idinput}')" class='btn-short-it btn-copy'>Copy</button>
+                </div>
+                </div>
+            </div>`;
             
             addItemToStorage(response.data.url, response.data.hashid);
+            contSpan.value = "";
 
             // shortdiv.appendChild(divchild);
             /*var capa = document.getElementById("capa");
@@ -69,23 +74,45 @@ function addItemToStorage(url, hashid){
     console.log(sessionStorage)
 }
 
+
 for(var i=0;i<sessionStorage.length;i++){
-    let url=sessionStorage.key(i);
-    let hashid=sessionStorage.getItem(url);
-    console.log(url +", "+hashid)
-    let shortdiv = document.getElementById('linksContainer');
-    shortdiv.innerHTML+="<div class='cards-shortened'>"+
-            "<div class='div-center'>"+
-            "<span>"+url+"</span>"+
-            "</div>"+
-            "<div class='rayita-shorten'></div>"+
-            "<div class='grid-cont'>"+
-            "<div class='div-center'>"+
-                "<span class='cyan-color'>https://rel.ink/"+hashid+"</span>"+
-            "</div>"+
-            "<div class='div-center'>"+
-                "<button  onclick='+btncopy(+id+1)' class='btn-short-it btn-copy'>Copy</button>"+
-            "</div>"+
-            "</div>"+
-        "</div>";
+
+        var url=sessionStorage.key(i);
+        var hashid=sessionStorage.getItem(url);
+        console.log(url +", "+hashid)
+        idinput++;
+        let shortdiv = document.getElementById('linksContainer');
+        shortdiv.innerHTML+=`<div class='cards-shortened'>
+                <div class='div-center'>
+                <span>${url}</span>
+                </div>
+                <div class='rayita-shorten'></div>
+                <div class='grid-cont'>
+                <div class='div-center'>
+                    <span id="str_${idinput}" class='cyan-color'>https://rel.ink/${hashid}</span>
+                </div>
+                <div class='div-center'>
+                    <button  id="btn_${idinput}" onclick="copiarAlPortapapeles('str_${idinput}','btn_${idinput}')" class='btn-short-it btn-copy'>Copy</button>
+                </div>
+                </div>
+            </div>`;
 }
+
+function copiarAlPortapapeles(id_elemento, idbtn) {
+    console.log(id_elemento)
+    console.log(idbtn)
+    var aux = document.createElement("input");
+    aux.value=document.getElementById(id_elemento).innerHTML;
+
+    //aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+    document.body.removeChild(aux);
+
+    var btnCColor = document.getElementById(idbtn);
+    btnCColor.style.backgroundColor = "hsl(257, 27%, 26%)";
+    btnCColor.innerHTML = "Copied";
+
+
+  }
