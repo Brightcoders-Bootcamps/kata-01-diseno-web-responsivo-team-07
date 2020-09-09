@@ -44,9 +44,10 @@ function addElemento(text){
                 "</div>"+
                 "</div>"+
             "</div>";
+            
+            addItemToStorage(response.data.url, response.data.hashid);
 
             // shortdiv.appendChild(divchild);
-
             /*var capa = document.getElementById("capa");
             var h1 = document.createElement("h1");
             var button = document.createElement("button");
@@ -59,7 +60,32 @@ function addElemento(text){
         .catch(function (error) {
             console.log(error);
         });
-        }
+        } 
+}
 
-    
-  }
+
+function addItemToStorage(url, hashid){
+    sessionStorage.setItem(url, hashid); 
+    console.log(sessionStorage)
+}
+
+for(var i=0;i<sessionStorage.length;i++){
+    let url=sessionStorage.key(i);
+    let hashid=sessionStorage.getItem(url);
+    console.log(url +", "+hashid)
+    let shortdiv = document.getElementById('linksContainer');
+    shortdiv.innerHTML+="<div class='cards-shortened'>"+
+            "<div class='div-center'>"+
+            "<span>"+url+"</span>"+
+            "</div>"+
+            "<div class='rayita-shorten'></div>"+
+            "<div class='grid-cont'>"+
+            "<div class='div-center'>"+
+                "<span class='cyan-color'>https://rel.ink/"+hashid+"</span>"+
+            "</div>"+
+            "<div class='div-center'>"+
+                "<button  onclick='+btncopy(+id+1)' class='btn-short-it btn-copy'>Copy</button>"+
+            "</div>"+
+            "</div>"+
+        "</div>";
+}
