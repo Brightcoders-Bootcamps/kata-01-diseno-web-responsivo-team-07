@@ -383,13 +383,6 @@ h5 {
     margin-bottom: 0px;    
     line-height: 80px;
 }
-.msg{
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 19px;
-    text-align: center;
-    color: var(--light-gray);
-}
 .gs-btn{
     color: white !important;
     background-color: var(--blue-btn);
