@@ -555,11 +555,15 @@ h5 {
 
 .title-h5{
     margin-bottom: 30px;
+    text-align: left;
+
 }
 
 .text-h5{
     line-height: 25px;
     color: #A9A7AC;
+    text-align: left;
+
 }
 
 .ft-icons{
@@ -573,6 +577,9 @@ h5 {
     padding: 10px;
 }
 
+.twt{
+    margin-top: auto;
+}
 
 .width-input-short{
     width: 80%;
