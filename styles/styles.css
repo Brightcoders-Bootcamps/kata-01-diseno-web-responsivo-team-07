@@ -48,6 +48,10 @@ header{
     color:white;
     border-radius: 10px;
     justify-content: space-between;
+    position: absolute;
+    width: 83%;
+    margin-left: -3px;
+
 }
 .rayita-menu-morado{
     border-top: .1px solid white; width:90%;margin-left: 5%;
@@ -75,8 +79,9 @@ li{
 }
 
 .working-img{
-    width: auto;
-    height: 355px;
+    width: 130%;
+    height: auto;
+    margin-left: 20px;
 }
 
 h2{
