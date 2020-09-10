@@ -124,7 +124,7 @@ h2{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 19px;
-    text-align: center;
+    text-align: left;
     color: var(--light-gray);
     
 }
@@ -179,7 +179,7 @@ h2{
 }
 .input-shrtn-link{
     height: 50px;
-    width: 90%;
+    width: 95%;
     border-radius: 10px;
     font-family: 'Poppins';
     color: var(--light-gray);
@@ -238,6 +238,7 @@ h2{
     width: 40%;
     max-width: 600px;
     margin: 0px;
+    text-align: center !important;
 }
 .features-section{
     display: flex;
@@ -601,6 +602,8 @@ h5 {
 
 .width-btn-short{
     width: 20%;
+    padding-left: 0px;
+    padding-right: 2%;
 }
 /* clases del input y warning */
 .span-short{
