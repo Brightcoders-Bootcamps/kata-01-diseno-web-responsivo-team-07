@@ -3,7 +3,7 @@ function showMenu(){
     let menumorado= document.getElementById('menumorado');
     let sButton = document.getElementById('signButton');
     if(!isMenuOpen){
-        menumxorado.style.display = "block";
+        menumorado.style.display = "block";
         menumorado.style.padding= "15px";
         sButton.style.display= "inline-block";
     }else{
