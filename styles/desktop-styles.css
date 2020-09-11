@@ -257,11 +257,12 @@ h2{
 
 .brnd-sction{
     width: 30%;
-    height: fit-content;
+    height: calc(100% - 10px);
     border-radius: 10px;
     align-items: center;
     background-color: white;
     padding-bottom: 30px;
+    
 }
 .card-content{
     padding: 15px 30px 17px 30px;
